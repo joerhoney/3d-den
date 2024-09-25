@@ -1,6 +1,6 @@
 **3D Modeling Class: Assignment 2**
 
-# [3D Den](https://joerhoney.github.io/3d-den/))
+# [3D Den](https://joerhoney.github.io/3d-den/)
 
 ![Screenshot of my work](https://github.com/joerhoney/3d-den/blob/main/screenshot.jpg)
 
