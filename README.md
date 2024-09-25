@@ -1,12 +1,14 @@
-**3D Animation Class: Assignment 0**
+**3D Modeling Class: Assignment 2**
 
-# [Three.js/Blender Template](https://joerhoney.github.io/threejs-blender/)
+# [3D Den](https://joerhoney.github.io/3d-den/))
 
-![Screenshot of my work](https://github.com/joerhoney/threejs-blender/blob/main/screenshot.jpg)
+![Screenshot of my work](https://github.com/joerhoney/3d-den/blob/main/screenshot.jpg)
 
 ## Objective
 
-- Maintain a working Three.js template
+- Create a book nook
+- Include different sized books, not exact duplicates
+- Include window with frame and separate geometry for glass
 
 ## Tools
 
@@ -15,5 +17,5 @@
 
 ## Notes
 
-- This is based on a 3D Animation class I am attending at Santiago Canyon College in Orange, CA.
+- This is based on a 3D modeling class I am attending at Santiago Canyon College in Orange, CA.
 - I embellished this work beyond the scope of the original assignment, just to give it more appeal. For instance, materials, backgrounds and lighting were not allowed. The model had to be submitted in default gray with nothing but the geometry.
