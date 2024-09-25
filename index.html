@@ -81,7 +81,7 @@
         const scene = new THREE.Scene();
 
         new RGBELoader().load(
-          "assets/pexels-pachon-in-motion-3-360.hdr",
+          "assets/dikhololo_night_4k.hdr",
           function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
 
@@ -108,20 +108,20 @@
         camera.position.set(20, 10, 120);
         scene.add(camera);
 
-        // scene.add(new THREE.AmbientLight(0xcccccc));
+        scene.add(new THREE.AmbientLight(0xcccccc));
 
-        // const pointLight = new THREE.PointLight(0xffffff, 100);
-        // camera.add(pointLight);
+        const pointLight = new THREE.PointLight(0xffffff, 100);
+        camera.add(pointLight);
 
         const loader = new GLTFLoader();
-        const gltf = await loader.loadAsync("assets/Moving-Geometry-2.gltf");
+        const gltf = await loader.loadAsync("assets/book-nook-low-poly.glb");
 
         const model = gltf.scene;
         scene.add(model);
 
         mixer = new THREE.AnimationMixer(model);
-        const clip = gltf.animations[0];
-        mixer.clipAction(clip.optimize()).play();
+        // const clip = gltf.animations[0];
+        // mixer.clipAction(clip.optimize()).play();
 
         //
 
@@ -160,7 +160,7 @@
         // console.log(controls);
         controls.enablePan = false;
         controls.minDistance = 4;
-        controls.maxDistance = 164;
+        controls.maxDistance = 1064;
         controls.target.set(0, 0, 0);
 
         window.addEventListener("resize", onWindowResize);
