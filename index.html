@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Three.js-Blender Template | Joe Rhoney</title>
+    <title>3D Den | Joe Rhoney</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#111111" />
     <meta
       name="description"
-      content="Description of scene."
+      content="A collection of 3D models from my 2024 3D modeling class."
     />
     <meta
       property="og:image"
@@ -81,7 +81,7 @@
         const scene = new THREE.Scene();
 
         new RGBELoader().load(
-          "assets/dikhololo_night_4k.hdr",
+          "assets/kloppenheim_04_4k.hdr",
           function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
 
@@ -108,10 +108,10 @@
         camera.position.set(20, 10, 120);
         scene.add(camera);
 
-        scene.add(new THREE.AmbientLight(0xcccccc));
+        // scene.add(new THREE.AmbientLight(0xcccccc));
 
-        const pointLight = new THREE.PointLight(0xffffff, 100);
-        camera.add(pointLight);
+        // const pointLight = new THREE.PointLight(0xffffff, 100);
+        // camera.add(pointLight);
 
         const loader = new GLTFLoader();
         const gltf = await loader.loadAsync("assets/book-nook-low-poly.glb");
