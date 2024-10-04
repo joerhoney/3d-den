@@ -80,22 +80,11 @@
 
         const scene = new THREE.Scene();
 
-        new RGBELoader().load(
-          "assets/kloppenheim_04_4k.hdr",
-          function (texture) {
-            texture.mapping = THREE.EquirectangularReflectionMapping;
-
-            scene.background = texture;
-            scene.environment = texture;
-
-            // model
-
-            // const loader = new GLTFLoader().setPath( 'assets/' );
-            // loader.load( 'Moving-Geometry-2.gltf', function ( gltf ) {
-            // 	scene.add( gltf.scene );
-            // } );
-          }
-        );
+        new RGBELoader().load("assets/reflections.hdr", function (texture) {
+          texture.mapping = THREE.EquirectangularReflectionMapping;
+          scene.background = texture;
+          scene.environment = texture;
+        });
 
         //
 
@@ -105,7 +94,7 @@
           0.25,
           300
         );
-        camera.position.set(0, 0, 0.1);
+        camera.position.set(0, 0, 4);
         scene.add(camera);
 
         // scene.add(new THREE.AmbientLight(0xcccccc));
@@ -120,8 +109,9 @@
         scene.add(model);
 
         mixer = new THREE.AnimationMixer(model);
+        gltf.scene.castShadow = true;
 
-        // console.log(gltf.animations);
+        console.log(gltf);
         gltf.animations.map((clip) => mixer.clipAction(clip).play());
         // const clip = gltf.animations[0];
         // mixer.clipAction(clip.optimize()).play();
@@ -161,9 +151,11 @@
 
         const controls = new OrbitControls(camera, renderer.domElement);
         // console.log(controls);
+        controls.minPolarAngle = Math.PI * 0.4;
+        controls.maxPolarAngle = Math.PI * 0.57;
         controls.enablePan = false;
         controls.minDistance = 0.1;
-        controls.maxDistance = 5;
+        controls.maxDistance = 6;
         controls.target.set(0, 0, 0);
 
         window.addEventListener("resize", onWindowResize);
@@ -188,6 +180,9 @@
         composer.render();
       }
     </script>
+
+    <!-- NAVIGATION -->
+
     <style>
       .nav {
         width: 0;
