@@ -1,12 +1,20 @@
-**3D Modeling Class: Assignment 2**
+**3D Modeling Class Assignments**
 
 # [3D Den](https://joerhoney.github.io/3d-den/)
 
 ![Screenshot of my work](https://github.com/joerhoney/3d-den/blob/main/screenshot.jpg)
 
-## Objective
+This is a conglomeration of my 3D modeling class assignments.
 
-- Create a book nook
+## Assignments
+
+1. Model a chair
+
+- Follow provided image (I might find a way to share that at some point)
+
+2. Create a book nook
+
+- Include shelves and seat
 - Include different sized books, not exact duplicates
 - Include window with frame and separate geometry for glass
 
