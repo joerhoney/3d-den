@@ -1,8 +1,8 @@
 **3D Modeling Class Assignments**
 
-# [3D Den](https://joerhoney.github.io/3d-den/)
+# [Haunted Den](https://joerhoney.github.io/haunted-den/)
 
-![Screenshot of my work](https://github.com/joerhoney/3d-den/blob/main/screenshot.jpg)
+![Screenshot of my work](https://github.com/joerhoney/haunted-den/blob/main/screenshot.jpg)
 
 This is a conglomeration of my 3D modeling class assignments.
 
